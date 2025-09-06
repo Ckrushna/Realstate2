@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Rich textured purple background */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centered Container for Login and Signup */
+.projects-container {
+    max-width: 400px;
+    background: #fff; /* White background for login/signup */
+    color: #333; /* Dark text for contrast */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Heading Styles */
+h2, h3 {
+    text-align: center;
+    
+    border-radius: 2px;
+    margin-bottom: 24px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #b020d4; /* Purple color for headings */
+}
+
+/* Form Styles */
+.project-form, .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #4b0082; /* Purple label color */
+}
+
+.form-group input {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background: #fff; /* White input field background */
+    color: #333; /* Dark text */
+    font-size: 1rem;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+/* Zoom effect on hover */
+.form-group input:hover, .form-group input:focus {
+    transform: scale(1.05);
+    border-color: #4b0082; /* Purple border on focus */
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #9a34e2, #c49be2);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Zoom and glow effect on hover */
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(239, 157, 255, 0.8); /* Glow effect */
+}
+/* Delete Project Button */
+.delete-project-container {
+    padding: 20px;
+    border: 2px solid #333; /* Dark border for delete project container */
+    background: #fff; /* White background */
+    color: #333; /* Dark text for contrast */
+    border-radius: 12px;
+    width: 100%; /* Make it responsive */
+    max-width: 400px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    text-align: center;
+    margin: 20px auto;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.delete-project-container h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #ff1744; /* Bright red for the delete project heading */
+}
+
+.delete-project-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+.delete-project-container input:hover, .delete-project-container input:focus {
+    border-color: #ff1744; /* Red border on focus */
+    box-shadow: 0px 4px 10px rgba(255, 23, 68, 0.3);
+}
+
+/* Delete Button Styles */
+.delete-project-container button {
+    padding: 10px 20px;
+    background-color: #ff1744; /* Bright red background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.delete-project-container button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(255, 23, 68, 0.6); /* Glow effect for delete button */
+}
+
+.delete-project-container p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: inherit;
+}
+/* Search Input */
+.search-input {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid #ffc107;
+    background: #fff; /* White input field background */
+    color: #333;
+    font-size: 1rem;
+    margin-right: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+/* Zoom effect on hover */
+.search-input:hover, .search-input:focus {
+    transform: scale(1.05);
+    border-color: #00bcd4;
+    outline: none;
+}
+
+/* Searched Project Styles */
+.searched-project {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.searched-project img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Add subtle animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projects-container, .project-form, .searched-project {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .projects-container {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .form-group label, .form-group input, .search-input {
+        font-size: 0.9rem;
+    }
+}
+.readonly-input {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
